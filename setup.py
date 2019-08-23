@@ -77,9 +77,9 @@ if sys.version_info[:2] < (2, 7):
     raise RuntimeError("Bokeh requires python >= 2.7")
 
 # immediately handle lightweight "python setup.py --install-js"
-#if len(sys.argv) == 2 and sys.argv[-1] == '--install-js':
-install_js()
-sys.exit()
+if len(sys.argv) == 2 and sys.argv[-1] == '--install-js':
+    install_js()
+    sys.exit()
 
 # we want to have the license at the top level of the GitHub repo, but setup
 # can't include it from there, so copy it to the package directory first thing
