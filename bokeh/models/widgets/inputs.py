@@ -95,7 +95,7 @@ class FileInput(Widget):
     The mime type of the selected file.
     """)
 
-    filename = String(default="", readonly=True, help="""
+    filename = String(default="", readonly=False, help="""
     The filename of the selected file.
     The file path is not included as browsers do not allow access to it.
     """)
