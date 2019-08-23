@@ -256,7 +256,7 @@ def jsbuild_prompt():
     #while value not in mapping:
     #    print("Input '%s' not understood. Valid choices: 1, 2\n" % value)
     #    value = input("Choice? ")
-    return 2
+    return 1
 
 # -----------------------------------------------------------------------------
 # Helpers for operations in the bokehjs dir
